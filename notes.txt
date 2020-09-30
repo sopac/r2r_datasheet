@@ -1,0 +1,32 @@
+R2R DataSheet Register
+**********************
+Country
+Location
+Site
+DataLink
+Observer
+
+Water Quality Measurements
+Water Chemistry Measurements
+Forest Survey
+Terrestrial Survey
+Avifauna Survey - Habitat Type
+Socio-Economic Survey
+Fishing Creel Survey
+Fishing Benthic Survey
+Biological Survey - Marine, Water, Terresterial (Habitat Type)
+
+
+
+//generate-all
+grails generate-all r2r_datasheet.Country -force
+grails generate-all r2r_datasheet.Site -force
+grails generate-all r2r_datasheet.Avifauna -force
+grails generate-all r2r_datasheet.Biological -force
+grails generate-all r2r_datasheet.FishingBenthic -force
+grails generate-all r2r_datasheet.FishingCreel -force
+grails generate-all r2r_datasheet.Forestry -force
+grails generate-all r2r_datasheet.SocioEconomic -force
+grails generate-all r2r_datasheet.Terrestrial -force
+grails generate-all r2r_datasheet.WaterChemistry -force
+grails generate-all r2r_datasheet.WaterQuality -force
