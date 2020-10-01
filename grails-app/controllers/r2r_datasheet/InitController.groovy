@@ -8,6 +8,7 @@ class InitController {
     String path = "/home/sachin/Dropbox/R2R-SOC-Training/migrate/"
 
     def index() {
+        if (!new File(path).exists()) path = "/home/sachin/migrate/"
         country()
     }
 

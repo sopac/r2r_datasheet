@@ -11,8 +11,8 @@ class Avifauna {
     java.sql.Time dateTime
     String latitude
     String longitude
-    int totalSighted
 
+    int totalSighted
     //types
     boolean commonMyna
     boolean jungleMyna

@@ -1,0 +1,10 @@
+#deployment services
+source java8
+grails war
+sshpass -p 'kotlin9!@' ssh root@services rm /var/lib/tomcat9/webapps/r2rdatasheet.war
+cp build/libs/r2r_datasheet-0.1.war .
+mv r2r_datasheet-0.1.war r2rdatasheet.war
+sshpass -p 'kotlin9!@' scp -C r2rdatasheet.war root@services:/var/lib/tomcat9/webapps/
+rm r2rdatasheet.war
+echo Deployed.
+#sshpass -p 'kotlin9!@' ssh root@services reboot

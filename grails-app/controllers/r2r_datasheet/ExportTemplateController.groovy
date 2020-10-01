@@ -22,7 +22,7 @@ class ExportTemplateController {
 
     def index() {
         //render new Terrestrial().getDomainClass()
-        export("avifauna")
+        //export("avifauna")
 
     }
 
@@ -30,6 +30,12 @@ class ExportTemplateController {
         def c = null
         if (domainType.equals("terrestrial")) c = new Terrestrial()
         if (domainType.equals("avifauna")) c = new Avifauna()
+        if (domainType.equals("biological")) c = new Biological()
+        if (domainType.equals("fishingbenthic")) c = new FishingBenthic()
+        if (domainType.equals("fishingcreel")) c = new FishingCreel()
+        if (domainType.equals("socioeconomic")) c = new SocioEconomic()
+        if (domainType.equals("waterquality")) c = new WaterQuality()
+
 
         def list = []
         list.add("Country")
