@@ -1,9 +1,9 @@
 package r2r_datasheet
 
-import grails.testing.gorm.DomainUnitTest
+import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class WaterChemistrySpec extends Specification implements DomainUnitTest<WaterChemistry> {
+class ExportTemplateControllerSpec extends Specification implements ControllerUnitTest<ExportTemplateController> {
 
     def setup() {
     }

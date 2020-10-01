@@ -2,6 +2,7 @@ package r2r_datasheet
 
 import com.xlson.groovycsv.*
 
+@grails.gorm.transactions.Transactional
 class InitController {
 
     String path = "/home/sachin/Dropbox/R2R-SOC-Training/migrate/"
@@ -22,7 +23,8 @@ class InitController {
                 c.projectComponent_1 = l.component1
                 c.projectComponent_2 = l.component2
                 c.projectComponent_3 = l.component3
-                c.save(failOnError: true)
+                c.save(failOnError: true, flush: true)
+                println "Saving Country: " + l.name
             }
         }
         render "<h3>Country Imported</h3>"

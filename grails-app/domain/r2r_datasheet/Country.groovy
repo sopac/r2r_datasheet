@@ -15,4 +15,8 @@ class Country {
         projectComponent_3(maxSize: 1250)
         projectManager(blank: true, nullable: true)
     }
+
+    String toString(){
+        return name
+    }
 }
